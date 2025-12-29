@@ -22,7 +22,7 @@ import static drivefactorys.drivefactory.getdriver;
 public class Tc1_Homepage {
 
 
-    @BeforeTest
+    @BeforeTest(alwaysRun = true)
     public void setup() throws IOException {
 
         String browser=System.getProperty("browser")!=null?System.getProperty("browser"):datautils.propertiesfile("environment","browser");
