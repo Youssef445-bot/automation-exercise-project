@@ -1,0 +1,39 @@
+[INFO] 2025-12-28 16:37:33 [java.lang.StackTraceElement] - the edge browser is opened
+[INFO] 2025-12-28 16:37:41 [java.lang.StackTraceElement] - the browser open the login url 
+[INFO] 2025-12-28 16:37:42 [java.lang.StackTraceElement] - the browser is opened 
+[INFO] 2025-12-28 16:37:52 [java.lang.StackTraceElement] - the browser is opened
+[INFO] 2025-12-28 16:37:53 [java.lang.StackTraceElement] - the browser is opened 
+[INFO] 2025-12-28 16:38:02 [java.lang.StackTraceElement] - the browser is opened
+[INFO] 2025-12-28 16:38:05 [java.lang.StackTraceElement] - the browser is opened 
+[INFO] 2025-12-28 16:38:16 [java.lang.StackTraceElement] - the browser is opened
+[INFO] 2025-12-28 16:38:18 [java.lang.StackTraceElement] - the browser is opened 
+[INFO] 2025-12-28 16:38:28 [java.lang.StackTraceElement] - the browser is opened
+[INFO] 2025-12-28 16:38:30 [java.lang.StackTraceElement] - the browser is opened 
+[INFO] 2025-12-28 16:38:42 [java.lang.StackTraceElement] - the browser is opened
+[INFO] 2025-12-28 16:38:44 [java.lang.StackTraceElement] - the browser is opened 
+[INFO] 2025-12-28 16:38:56 [java.lang.StackTraceElement] - the browser is opened
+[INFO] 2025-12-28 16:38:56 [java.lang.StackTraceElement] - Testcase registeruserstarted
+[INFO] 2025-12-28 16:38:56 [java.lang.StackTraceElement] - youssef-2025-12-28-4-37-28PM
+[INFO] 2025-12-28 16:38:56 [java.lang.StackTraceElement] - ozyyoussef317@gmail.com-2025-12-28-4-37-28PM
+[INFO] 2025-12-28 16:39:07 [java.lang.StackTraceElement] - Testcase registeruserstarted
+[INFO] 2025-12-28 16:39:07 [java.lang.StackTraceElement] - Testcase verfiyallproductsandproductdetailpagestarted
+[INFO] 2025-12-28 16:39:15 [java.lang.StackTraceElement] - Testcase verfiyallproductsandproductdetailpagestarted
+[INFO] 2025-12-28 16:39:20 [java.lang.StackTraceElement] - Testcase checkthevisbilitystarted
+[INFO] 2025-12-28 16:39:22 [java.lang.StackTraceElement] - Testcase loginwithinvalidemailandpasswordstarted
+[INFO] 2025-12-28 16:39:25 [java.lang.StackTraceElement] - Testcase loginwithvalidemailandpasswordstarted
+[INFO] 2025-12-28 16:39:59 [java.lang.StackTraceElement] - Testcase loginwithvalidemailandpasswordstarted
+[INFO] 2025-12-28 16:39:59 [java.lang.StackTraceElement] - Testcase logoutuserstarted
+[INFO] 2025-12-28 16:40:04 [java.lang.StackTraceElement] - Testcase logoutuserstarted
+[INFO] 2025-12-28 16:40:04 [java.lang.StackTraceElement] - Testcase placeorderloginbeforecheckoutstarted
+[INFO] 2025-12-28 16:40:13 [java.lang.StackTraceElement] - the product:[[EdgeDriver: MicrosoftEdge on windows (f6b2be0938ec031dbc864a41a43f4c6b)] -> css selector: .product-image-wrapper]
+[INFO] 2025-12-28 16:40:14 [java.lang.StackTraceElement] - the product:[[EdgeDriver: MicrosoftEdge on windows (f6b2be0938ec031dbc864a41a43f4c6b)] -> css selector: .product-image-wrapper]
+[INFO] 2025-12-28 16:40:15 [java.lang.StackTraceElement] - the product:[[EdgeDriver: MicrosoftEdge on windows (f6b2be0938ec031dbc864a41a43f4c6b)] -> css selector: .product-image-wrapper]
+[INFO] 2025-12-28 16:40:24 [java.lang.StackTraceElement] - Testcase placeorderloginbeforecheckoutstarted
+[INFO] 2025-12-28 16:40:24 [java.lang.StackTraceElement] - Testcase clikonsignupstarted
+[INFO] 2025-12-28 16:40:34 [java.lang.StackTraceElement] - Testcase clikonsignupstarted
+[INFO] 2025-12-28 16:40:34 [java.lang.StackTraceElement] - Testcase viewandcartbrandproductsstarted
+[INFO] 2025-12-28 16:40:41 [java.lang.StackTraceElement] - Testcase viewcatogeryproductstarted
+[INFO] 2025-12-28 16:40:45 [java.lang.StackTraceElement] - Testcase addproducttocartstarted
+[INFO] 2025-12-28 16:41:14 [java.lang.StackTraceElement] - Testcase addproducttocartstarted
+[INFO] 2025-12-28 16:41:14 [java.lang.StackTraceElement] - Testcase verfiyproductquantityincartstarted
+[INFO] 2025-12-28 16:41:22 [java.lang.StackTraceElement] - Testcase verfiyproductquantityincartstarted
