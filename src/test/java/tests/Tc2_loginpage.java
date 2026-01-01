@@ -69,10 +69,7 @@ public class Tc2_loginpage {
                 .clickonloginbutton()
                 .clickonlogoutbutton();
         Assert.assertTrue(new p02_loginpage(getdriver()).asserloginTc(datautils.propertiesfile("environment","signup_url")));
-
-
     }
-
     @AfterTest
     public void quit(){
         drivefactory.quit();

@@ -9,6 +9,8 @@ public class p08_checkoutpage {
     private final By reviewYourOrder =By.xpath("//div/h2[text()='Review Your Order']");
     private final By description=By.tagName("textarea");
     private final By placeorder=By.xpath("//a[@href=\"/payment\"]");
+    private final By deliveryaddress=By.id("address_delivery");
+    private final By billingaddress=By.id("address_invoice");
     private final WebDriver driver;
 
     public p08_checkoutpage(WebDriver driver) {
@@ -21,6 +23,14 @@ public class p08_checkoutpage {
     }
     public p08_checkoutpage enterthedescriptipon(String text){
         utility.sendkeys(driver,description,text);
+        return this;
+    }
+    public p08_checkoutpage verifytheaddress(){
+        utility.gettext(driver,deliveryaddress);
+        return this;
+    }
+    public p08_checkoutpage verfiybillingaddress(){
+        utility.gettext(driver,billingaddress);
         return this;
     }
     public p09_payment clickonplaceorder(){

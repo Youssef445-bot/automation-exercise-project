@@ -69,6 +69,10 @@ public class Tc3_signup {
 
                Assert.assertTrue(new p04_createdaccount(getdriver()).checkthedeltedaccount());
     }
+    @Test
+    public void verfiyaddressdetailsincheckout(){
+
+    }
 
     @AfterTest
     public void quit(){
