@@ -9,7 +9,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.p01_Homepage;
+import pages.p03_signup;
 import pages.p04_createdaccount;
+import pages.p08_checkoutpage;
 import utilites.datautils;
 import utilites.logsutils;
 import utilites.utility;
@@ -70,7 +72,51 @@ public class Tc3_signup {
                Assert.assertTrue(new p04_createdaccount(getdriver()).checkthedeltedaccount());
     }
     @Test
-    public void verfiyaddressdetailsincheckout(){
+    public void verfiyaddressdetailsincheckout() throws IOException, InterruptedException {
+
+        new p01_Homepage(getdriver()).clickonsignupbutton()
+                .checkthevisiblityofthenewuser(datautils.getjsondata("information","new user"))
+                .enterusername(name)
+                .enteremail(email)
+                .clickonsignup();
+                new p03_signup(getdriver())
+                .selectthetitle()
+                .enterpassword(datautils.getjsondata("signup","password"))
+                .selectthedays(datautils.getjsondata("signup","days"))
+                .selectmonth(datautils.getjsondata("signup","month"))
+                .selectyears(datautils.getjsondata("signup","years"))
+                .selecthhecheckboxsinup()
+                .selectthecheckboxofreciceve()
+                .firstname(datautils.getjsondata("signup","firstname"))
+                .lastname(datautils.getjsondata("signup","lastname"))
+                .company(datautils.getjsondata("signup","company"))
+                .address1(datautils.getjsondata("signup","address1"))
+                .address2(datautils.getjsondata("signup","address2"))
+                .selectthecountry(datautils.getjsondata("signup","country"))
+                .state(datautils.getjsondata("signup","state"))
+                .city(datautils.getjsondata("signup","city"))
+                .zipcode(datautils.getjsondata("signup","zipcode"))
+                .mobilenumber(datautils.getjsondata("signup","mobile number"))
+                .clickoncreateaccount()
+                .clickoncontinue()
+                .checkthevisibleoflogout()
+                .clickontheproducts()
+                .addrandomproducttocart(2,34)
+                .clickcartpage()
+                .assertcarturl(datautils.propertiesfile("environment","https://automationexercise.com/view_cart"))
+                .clickonProceedToCheckout();
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","firstname")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","lastname")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","company")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","address1")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","address2")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","country")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","state")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","city")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","zipcode")));
+        Assert.assertTrue(new p08_checkoutpage(getdriver()).verifytheaddress().contains(datautils.getjsondata("signup","mobile number")));
+                        new p08_checkoutpage(getdriver()) .deleteaccount()
+                                .checkthedeltedaccount();
 
     }
 
